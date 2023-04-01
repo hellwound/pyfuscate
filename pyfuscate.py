@@ -9,13 +9,6 @@ if platform.system().startswith("Windows"):
         os.system("python -m pip install colored -q -q -q")
         from colored import fg, bg, attr
     try:
-        import strstyle
-        from strstyle import *
-    except ImportError:
-        os.system("python -m pip install strstyle -q -q -q")
-        import strstyle
-        from strstyle import *
-    try:
         import termcolor
     except:
         os.system("python -m pip install termcolor -q -q -q")
